@@ -1,10 +1,56 @@
-<nav>
+<nav #navbar>
   <div class="wrapper">
     <div class="navbar-item">
       <div class="navbar-item1">
-          <a href="javascript:void(0)">Buy Now</a>
+        <a href="javascript:void(0)">Buy Now</a>
       </div>
-      <div class="navbar-item2">2</div>
+      <div class="navbar-item2" (click)="menuActive(navbar)">
+        <div class="menu-wrapper">
+          <span>MENU</span>
+          <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar-menu">
+    <div class="inner">
+      <div class="container-logo">
+        <img src="/assets/images/logo_iceborne_l.png" class="logo" />
+      </div>
+      <div class="content">
+        <ul class="ul-cleargap">
+          <li>
+            <a href="javascript:void(0)"> Home </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"> Story </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"> Ecosystem </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"> Monster </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"> Hunting </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"> Hunting </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"> Hunting </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"> Hunting </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"> Hunting </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>

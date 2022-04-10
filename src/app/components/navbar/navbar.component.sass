@@ -1,8 +1,9 @@
 nav
     position: fixed
+    top: 0
     right: 0
     padding: 30px 10px
-    z-index: 1
+    z-index: 11
     .wrapper
         display: flex
         justify-content: space-between
@@ -13,18 +14,17 @@ nav
 
     .navbar-item
         display: flex
-        align-items: center
         position: relative
         .navbar-item1
-            margin-right: 10px
             background: url(/assets/images/btn_reservation_base.png) no-repeat
-            background-size: cover
+            background-size: contain
             padding: 30px
-            width: 14vw
-            height: auto
+            width: 12.9677vw
+            height: 4vw
             border: 2px solid white
             border-top: none
             position: relative
+            transition: 0.3s
             a
                 position: absolute
                 top: 50%
@@ -32,3 +32,107 @@ nav
                 transform: translate(-50%,-50%)
                 color: white
                 text-decoration: none
+                font-weight: bold
+                letter-spacing: 1px
+
+        .navbar-item2
+            position: relative
+            left: 30px
+            background: url(/assets/images/btn_menu_base.png) no-repeat
+            background-size: contain
+            width: 5.6vw
+            height: 6vw
+            display: flex
+            align-items: center
+            justify-content: center
+            color: white
+            cursor: pointer
+            z-index: 11
+            &:hover
+                background: url(/assets/images/btn_menu_base_on.png) no-repeat
+                background-size: contain
+            .menu-wrapper
+                margin-top: -35px
+            span
+                font-size: 14px
+                letter-spacing: 1px
+            .hamburger-menu
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                .line
+                    position: relative
+                    display: block
+                    width: 60%
+                    height: 2px
+                    background-color: white
+                    margin: 2.5px 0
+                    transition: 0.3s
+.navbar-menu
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100vh
+    background: url(/assets/images/bg_pattern.jpg) no-repeat
+    background-size: cover
+    background-position: center
+    z-index: 10
+    transition: 0.3s
+    opacity: 0
+    visibility: hidden
+    overflow-y: auto
+    .container-logo
+        width: 30vw
+        height: 100%
+        margin: 0 auto
+    .content
+        display: flex
+        justify-content: center
+        ul
+            margin-left: -10vw
+            // opacity: 0
+            // visibility: hidden
+            li
+                margin: 30px 0
+                transform: translateX(-100%)
+                opacity: 0
+                &::before
+                    content: "-"
+                    font-size: 2vw
+                    margin-right: 5px
+                a
+                    font-size: 2vw
+                    font-weight: bold
+                    color: #0f2a40
+
+// Hide Scrollbar in Chrome
+.navbar-menu::-webkit-scrollbar
+    width: 0
+    background: transparent
+// Hide Scrollbar in Firefox
+.navbar-menu
+    scrollbar-width: none
+
+nav.active
+    .hamburger-menu
+        .line
+            &:first-child
+                transform: rotate(210deg)
+                top: 0.5vw
+            &:last-child
+                transform: rotate(-210deg)
+    .navbar-item1
+        opacity: 0
+    .navbar-menu
+        opacity: 1
+        visibility: visible
+
+@keyframes menuFade
+    0%
+        transform: translateX(-100%)
+        opacity: 0
+    100%
+        transform: translateX(0%)
+        opacity: 1
