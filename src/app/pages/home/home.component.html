@@ -1,4 +1,12 @@
 <section id="home">
+  <div class="bg-video">
+    <div class="movie-wrapper">
+      <video loop muted onloadedmetadata="this.muted = true">
+        <source src="/assets/video/mhw_opening.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
   <div class="main-logo">
     <img src="/assets/images/logo_ps4_white.png" class="main-logo1" />
     <img src="/assets/images/logo_xboxone_white.png" class="main-logo2" />
@@ -14,6 +22,67 @@
         <p class="main-text p2">Available now!</p>
       </div>
       <app-update-new></app-update-new>
+    </div>
+  </div>
+</section>
+
+<section id="rewards">
+  <div class="wrapper flex-center">
+    <div class="item">
+      <img src="assets/images/icon_pick01.png" class="reward1" />
+    </div>
+    <div class="item">
+      <img src="assets/images/icon_pick02.png" class="reward2" />
+    </div>
+    <div class="item">
+      <img src="assets/images/icon_pick03.png" class="reward3" />
+    </div>
+  </div>
+</section>
+
+<section id="update-information">
+  <div class="update-information-section1">
+    <div class="wrapper flex-center">
+      <div class="update-info1">
+        <div class="wrapper-icon">
+          <img src="assets/images/icon_patch.png" class="icon" />
+        </div>
+        <span>Update Information</span>
+      </div>
+      <div class="update-info2">
+        <div class="wrapper-text">
+          <p>
+            [Free Update
+            <span class="text-color">Ver. 15.11</span>]
+          </p>
+          <p>Bug Fixes</p>
+        </div>
+        <div class="wrapper-arrow">
+          <img src="assets/images/icon_arrow_l.png" class="icon" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="update-information-section2">
+    <div class="wrapper">
+      <div class="item1">
+        <div class="wrapper-icon">
+          <img src="assets/images/icon_eventquesat.png" class="icon" />
+        </div>
+        <span>Event Quest Schedule</span>
+        <div class="wrapper-arrow">
+          <img src="assets/images/icon_arrow_l.png" class="icon" />
+        </div>
+      </div>
+      <div class="item2">
+        <div class="wrapper-icon">
+          <img src="assets/images/icon_dlc.png" class="icon" />
+        </div>
+        <span>Downloadable Content</span>
+        <div class="wrapper-arrow">
+          <img src="assets/images/icon_arrow_l.png" class="icon" />
+        </div>
+      </div>
     </div>
   </div>
 </section>

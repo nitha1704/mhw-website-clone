@@ -34,7 +34,7 @@
             font-size: 1vw
     .iceborne-logo
         height: 24vw
-        width: 35vw
+        width: 40vw
     .paragraph
         .main-text
             color: white
@@ -45,3 +45,124 @@
             font-size: 2.86667vw
             line-height: 1.6
             margin-bottom: 0.66667vw
+    .bg-video
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        opacity: 0
+        visibility: hidden
+        transition: 0.3s
+        .movie-wrapper
+            width: 100%
+            height: 100%
+            overflow: hidden
+            video
+                width: 100%
+                height: 100%
+                pointer-events: none
+                transform: scale(1.2)
+    .bg-video.show
+        opacity: 1
+        visibility: visible
+
+#rewards
+    background: rgba(29,139,192,0.7)
+    .item
+        padding: 20px 80px
+    .reward1
+        width: 150px
+        height: 120px
+    .reward2
+        width: 180px
+        height: 182px
+    .reward3
+        width: 200px
+        height: 150px
+
+#update-information
+    margin-top: 80px
+    color: white
+    .update-information-section1
+        .wrapper
+            background: url(https://www.monsterhunter.com/world-iceborne/assets/img/common/common/update_base_left_top.png) 0 0 / 0.73vw auto no-repeat, url(https://www.monsterhunter.com/world-iceborne/assets/img/common/common/update_base_center_top.png) left 0.72916vw top 0.20833vw/calc(100% - 1.45833vw) 0.72916vw no-repeat, url(https://www.monsterhunter.com/world-iceborne/assets/img/common/common/update_base_right_top.png) right 0.20833vw top 0.20833vw /0.52083vw auto no-repeat, url(https://www.monsterhunter.com/world-iceborne/assets/img/common/common/update_base_left_bottom.png) left 0.20833vw bottom 0.20833vw /3.4375vw auto no-repeat, url(https://www.monsterhunter.com/world-iceborne/assets/img/common/common/update_base_center_bottom.png) left 3.64583vw bottom 0.20833vw/calc(100% - 7.29166vw) 1.61458vw no-repeat, url(https://www.monsterhunter.com/world-iceborne/assets/img/common/common/update_base_right_bottom.png) right 0.20833vw bottom 0.20833vw /3.4375vw auto no-repeat, rgba(29, 138, 192, 1)
+            background-color: #09405e
+            width: 80vw
+            margin: 0 auto
+            padding: 50px 0
+            box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4)
+            border: 2px solid white
+        .update-info1
+            width: 100%
+            text-align: center
+            display: flex
+            align-items: center
+            padding: 0 50px
+            .wrapper
+                width: 100%
+            .icon
+                width: 50px
+                height: 50px
+
+            span
+                width: 100%
+                color: yellow
+                font-size: 1.5vw
+                letter-spacing: 1px
+        .update-info2
+            width: 100%
+            font-size: 1.3vw
+            display: flex
+            align-items: center
+            padding: 0 70px
+            border-left: 1px solid
+            .wrapper-text
+                width: 100%
+                .text-color
+                    color: yellow
+            .wrapper-arrow
+                width: 100%
+                text-align: right
+                .icon
+                    width: 1.5vw
+                    height: 1.2vw
+    .update-information-section2
+        .wrapper
+            width: 80vw
+            margin: 0 auto
+            padding: 50px 0
+            display: grid
+            grid-template-columns: 1fr 1fr
+            gap: 30px
+        .item1, .item2
+            width: 100%
+            color: yellow
+            background: #1d8ac0
+            background: url(https://www.monsterhunter.com/world-iceborne/assets/img/common/common/update_base_left_top.png) 0 0 / 0.73vw auto no-repeat, url(https://www.monsterhunter.com/world-iceborne/assets/img/common/common/update_base_center_top.png) left 0.72916vw top 0.20833vw/calc(100% - 1.45833vw) 0.72916vw no-repeat, url(https://www.monsterhunter.com/world-iceborne/assets/img/common/common/update_base_right_top.png) right 0.20833vw top 0.20833vw /0.52083vw auto no-repeat, url(https://www.monsterhunter.com/world-iceborne/assets/img/common/common/update_base_left_bottom.png) left 0.20833vw bottom 0.20833vw /3.4375vw auto no-repeat, url(https://www.monsterhunter.com/world-iceborne/assets/img/common/common/update_base_center_bottom.png) left 3.64583vw bottom 0.20833vw/calc(100% - 7.29166vw) 1.61458vw no-repeat, url(https://www.monsterhunter.com/world-iceborne/assets/img/common/common/update_base_right_bottom.png) right 0.20833vw bottom 0.20833vw /3.4375vw auto no-repeat, rgba(29, 138, 192, 1)
+            display: flex
+            align-items: center
+            padding: 20px 30px
+            box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4)
+            border: 2px solid white
+            .wrapper-icon
+                width: 25%
+                padding: 0 20px
+                .icon
+                    width: 75px
+                    height: 70px
+            span
+                width: 50%
+                font-size: 1.3vw
+                text-align: center
+            .wrapper-arrow
+                width: 25%
+                text-align: right
+                .icon
+                    width: 1.5vw
+                    height: 1.2vw
+        .item2
+            .wrapper-icon
+                .icon
+                    width: 75px
+                    height: 50px

@@ -10,7 +10,9 @@ export class NavbarComponent implements OnInit {
   offsetY: number = 0;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.showFirstAnimation();
+  }
 
   menuActive(navbar: any) {
     clearTimeout(this.timer);
@@ -37,5 +39,13 @@ export class NavbarComponent implements OnInit {
       body.classList.remove('fixed');
       window.scrollTo(0, this.offsetY);
     }
+  }
+
+  showFirstAnimation() {
+    setTimeout(() => {
+      const navItem: any = document.querySelector('nav .wrapper');
+      navItem.style.animation = `showNavItem 0.5s`;
+      navItem.style.animationFillMode = 'forwards';
+    }, 1500);
   }
 }
