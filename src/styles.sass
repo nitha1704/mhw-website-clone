@@ -1,4 +1,8 @@
 @import "font"
+@import 'swiper/scss'
+@import 'swiper/scss/navigation'
+@import 'swiper/scss/pagination'
+@import "swiper/scss/effect-fade"
 
 *
     margin: 0
@@ -45,3 +49,22 @@ img
 
 a,a:active,a:focus,a:visited
     text-decoration: none
+
+// Swiper Customize
+#lastest-information
+    .swiper-pagination-bullet
+        cursor: pointer
+        width: 0.85vw
+        height: 0.85vw
+        transform: rotate(45deg)
+        border-radius: 0
+        margin-right: 20px
+        opacity: 1
+        transition: 0.3s
+        border: 3px solid black
+        &:hover
+            background: white
+            border: 3px solid black
+    .swiper-pagination-bullet-active
+        background: white
+        border: 3px solid black

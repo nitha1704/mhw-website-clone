@@ -1,0 +1,21 @@
+<section id="lastest-information">
+  <div class="title flex-center">
+    <h1>Latest Information</h1>
+  </div>
+  <div class="wrapper">
+    <swiper [config]="configLastestInformations">
+      <ng-template swiperSlide *ngFor="let item of lastestInformations">
+        <div class="info">
+          <div>
+            <img src="{{ item.thumbnail }}" />
+          </div>
+          <p>Slide {{ item.text }}</p>
+        </div>
+      </ng-template>
+    </swiper>
+    <div class="wrapper-swiper-nagivation">
+      <div class="prev-icon"></div>
+      <div class="next-icon"></div>
+    </div>
+  </div>
+</section>
