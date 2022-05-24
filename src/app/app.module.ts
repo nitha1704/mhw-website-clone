@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { UpdateNewComponent } from './components/update-new/update-new.component';
 import { LastestInformationComponent } from './components/lastest-information/lastest-information.component';
+import { MhwMediaComponent } from './components/mhw-media/mhw-media.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { LastestInformationComponent } from './components/lastest-information/la
     NavbarComponent,
     UpdateNewComponent,
     LastestInformationComponent,
+    MhwMediaComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SwiperModule],
   providers: [],

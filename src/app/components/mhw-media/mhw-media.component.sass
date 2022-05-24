@@ -1,49 +1,51 @@
-#lastest-information
-     
+#mhw-media
+    overflow-x: hidden
     .wrapper
         width: 80%
         margin: 0 auto
         position: relative
-    .info
+        h1
+            text-align: center
+            margin-bottom: 20px
+            white-space: nowrap
+
+    .mhw-title
+        margin-top: 5vw
+    .wrapper-image
         position: relative
-        background: white
-        width: auto
-        height: 18vw
+        display: flex
         margin: 5px
         transition: 0.3s
+        &::after
+            content: ""
+            width: 120px
+            height: 50px
+            background-image: url("/assets/images/icon_arrow_square.png")
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            position: absolute
+            bottom: 0
+            right: 0
+            transition: 0.3s
         &:hover
             border: 3px solid #0e9ee3
             &::after
-                background-image: url("/assets/images/icon_bottomRight_on.png")
-        &::after
-            content: ""
-            width: 0.86667vw
-            height: 0.8vw
-            position: absolute
-            bottom: 0.26667vw
-            right: 0.26667vw
-            z-index: 1
-            background-image: url("/assets/images/icon_bottomRight.png")
-            background-size: cover
-            transition: background-image 0.2s
-        p
-            padding: 10px
-            font-size: 1vw
-
+                background-image: url("/assets/images/icon_arrow_square_on.png")
     .wrapper-swiper-navigation
         position: absolute
         top: 50%
         transform: translateY(-50%)
         z-index: 2
         width: 100%
-    .wrapper-pagination
+    .wrapper-pagination-mhw-media
         position: absolute
-        bottom: -25%
+        bottom: -15%
         width: 100%
         text-align: center
 
-    .prev-icon,
-    .next-icon
+    .prev-icon-mhw-media,
+    .next-icon-mhw-media
         width: 3.3vw
         height: 3.3vw
         background-repeat: no-repeat
@@ -54,26 +56,26 @@
         &:hover
             border: 3px solid #0e9ee3
 
-    .prev-icon
+    .prev-icon-mhw-media
         background-image: url("/assets/images/btn_carousel_prev.png") !important
         position: absolute
         left: -6%
         &:hover
             background-image: url("/assets/images/btn_carousel_prev_on.png") !important
-    .next-icon
+    .next-icon-mhw-media
         background-image: url("/assets/images/btn_carousel_next.png") !important
         position: absolute
         right: -6%
         &:hover
             background-image: url("/assets/images/btn_carousel_next_on.png") !important
 
-    .lastest-information-button
+    .mhw-media-button
         text-align: center
         margin-top: 6vw
         a
             background-color: #5daad0
             color: white
-            padding: 10px 70px
+            padding: 10px 170px
             font-size: 1.6vw
             letter-spacing: 1px
             position: relative

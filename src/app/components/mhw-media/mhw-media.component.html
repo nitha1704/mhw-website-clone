@@ -1,0 +1,25 @@
+<section id="mhw-media">
+  <div class="mhw-title flex-center">
+    <h1>Media</h1>
+  </div>
+  <div class="wrapper">
+    <swiper [config]="mhwMediaConfig">
+      <ng-template swiperSlide *ngFor="let item of mediaList">
+        <h1>{{ item.text }}</h1>
+        <div class="wrapper-image mhw-card">
+            <img src={{item.thumbnail}} />
+        </div>
+      </ng-template>
+    </swiper>
+    <div class="wrapper-swiper-navigation">
+      <div class="prev-icon-mhw-media"></div>
+      <div class="next-icon-mhw-media"></div>
+    </div>
+    <div class="wrapper-pagination-mhw-media"></div>
+  </div>
+  <div class="mhw-media-button flex-center">
+    <a href="javascript:void(0)" class="mhw-card">
+      <span>List</span>
+    </a>
+  </div>
+</section>

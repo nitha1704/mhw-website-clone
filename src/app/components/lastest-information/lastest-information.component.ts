@@ -50,7 +50,7 @@ export class LastestInformationComponent implements OnInit {
     spaceBetween: 20,
     speed: 500,
     navigation: { prevEl: '.prev-icon', nextEl: '.next-icon' },
-    pagination: { clickable: true },
+    pagination: { el: '.wrapper-pagination', clickable: true },
     loop: true,
   };
 

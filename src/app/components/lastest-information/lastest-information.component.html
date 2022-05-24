@@ -1,11 +1,11 @@
 <section id="lastest-information">
-  <div class="title flex-center">
+  <div class="mhw-title flex-center">
     <h1>Latest Information</h1>
   </div>
   <div class="wrapper">
     <swiper [config]="configLastestInformations">
       <ng-template swiperSlide *ngFor="let item of lastestInformations">
-        <div class="info">
+        <div class="info mhw-card">
           <div>
             <img src="{{ item.thumbnail }}" />
           </div>
@@ -13,9 +13,15 @@
         </div>
       </ng-template>
     </swiper>
-    <div class="wrapper-swiper-nagivation">
+    <div class="wrapper-swiper-navigation">
       <div class="prev-icon"></div>
       <div class="next-icon"></div>
     </div>
+    <div class="wrapper-pagination"></div>
+  </div>
+  <div class="lastest-information-button flex-center">
+    <a href="javascript:void(0)" class="mhw-card">
+      <span>Latest Information Here</span>
+    </a>
   </div>
 </section>
