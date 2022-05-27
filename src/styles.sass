@@ -56,13 +56,101 @@ a,a:active,a:focus,a:visited
     width: 62vw
     height: 5vw
     text-align: center
-    margin: 0 auto 80px auto
+    margin: 0 auto 4vw auto
     h1
         font-size: 3vw
         letter-spacing: 2px
+        color: #0b263d
 .mhw-card
     box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4)
     border: 3px solid white
+.mhw-button
+    text-align: center
+    margin: 6vw 0 1vw 0
+    a
+        background-color: #5daad0
+        color: white
+        padding: 10px 170px
+        font-size: 1.6vw
+        letter-spacing: 1px
+        position: relative
+        transition: 0.3s
+        &::after
+            content: ""
+            background-image: url(/assets/images/icon_arrow_l.png)
+            background-size: contain
+            background-position: center
+            background-repeat: no-repeat
+            top: 50%
+            transform: translateY(-50%)
+            right: 3%
+            width: 30px
+            height: 25px
+            position: absolute
+        &:hover
+            background-color: #1d8ac0
+        span
+            position: relative
+            right: 5%
+
+.mhw-button2
+    text-align: center
+    margin: 6vw 0 1vw 0
+    .mhw-card
+        border: 1px solid white
+    a
+        background-color: rgba(29, 138, 192, 0.7)
+        color: white
+        padding: 10px 120px
+        font-size: 1.6vw
+        letter-spacing: 1px
+        position: relative
+        transition: 0.3s
+        &::after
+            content: ""
+            background-image: url(/assets/images/icon_arrow_l.png)
+            background-size: contain
+            background-position: center
+            background-repeat: no-repeat
+            top: 50%
+            transform: translateY(-50%)
+            right: 3%
+            width: 30px
+            height: 25px
+            position: absolute
+        &:hover
+            border: 1px solid #0e9ee3
+            background-color: #1d8ac0
+        span
+            position: relative
+            right: 5%
+
+.title-element
+    background: url("/assets/images/title_sub_base.png") no-repeat
+    background-position: center
+    background-size: cover
+    width: 50vw
+    height: 7.33vw
+    display: flex
+    align-items: center
+    h1
+        font-size: 5vw
+        font-weight: 500
+        line-height: 7.33333vw
+        margin-left: 4.33333vw
+        text-shadow: 0 0 25px #fff, 0 0 20px #fff, 0 0 10px #fff, 0 0 5px #fff, 0 0 2px #fff
+.wrap-content.typewriter
+    color: #FFF
+    text-shadow: 0 0 25px #000, 0 0 20px #000, 0 0 10px #000, 0 0 5px #000, 0 0 2px #000
+    margin: 5.66667vw 0 0 4vw
+    .subtitle-element
+        font-size: 2.66667vw
+        font-weight: 500
+        letter-spacing: 1px
+        line-height: 1.6
+    .paragraph-element
+        font-size: 1.3337vw
+        line-height: 1.6
 
 // Swiper Customize
 #lastest-information,
