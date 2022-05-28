@@ -130,6 +130,8 @@ a,a:active,a:focus,a:visited
             right: 5%
 
 .section-element
+    display: flex
+    flex-direction: column
     //position: relative
     .title
         background: url("/assets/images/title_sub_base.png") no-repeat
@@ -139,6 +141,8 @@ a,a:active,a:focus,a:visited
         height: 7.33vw
         display: flex
         align-items: center
+        --animate-duration: 0.9s
+        z-index: 1
         h1
             font-size: 5vw
             font-weight: 500
@@ -147,17 +151,17 @@ a,a:active,a:focus,a:visited
             text-shadow: 0 0 25px #fff, 0 0 20px #fff, 0 0 10px #fff, 0 0 5px #fff, 0 0 2px #fff
     .mhw-button2
         text-align: center
-        margin: 0
-        position: absolute
-        bottom: 10%
-        width: 100%
+        margin-bottom: 1.5%
+        opacity: 0
 
     .wrap-content.typewriter
         color: #FFF
         text-shadow: 0 0 25px #000, 0 0 20px #000, 0 0 10px #000, 0 0 5px #000, 0 0 2px #000
         margin: 5.66667vw 0 0 4vw
+        white-space: nowrap
+        flex-grow: 1
     .subtitle
-        font-size: 2.66667vw
+        font-size: 3vw
         font-weight: 500
         letter-spacing: 1px
         line-height: 1.6
@@ -187,6 +191,9 @@ a,a:active,a:focus,a:visited
         background: white
         border: 3px solid black
 
+// Animation
+.fadeInLeftTitle
+    animation: fadeInLeftTitle 1s ease-out
 @keyframes fadeIn
     0%
         opacity: 0
@@ -197,10 +204,19 @@ a,a:active,a:focus,a:visited
 @keyframes fadeInReverse
     0%
         position: relative
-        left: 50px
+        left: 300px
         opacity: 0
 
     100%
         position: relative
         left: 0px
         opacity: 1
+
+@keyframes fadeInLeftTitle
+    0%
+        opacity: 0
+        transform: translate3d(-10%,0,0)
+
+    100%
+        opacity: 1
+        transform: translateZ(0)

@@ -214,6 +214,27 @@
     background: url(/assets/images/eco_bg.jpg) no-repeat
     background-size: cover
     background-position: center
+    .bg-video
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        opacity: 0
+        visibility: hidden
+        transition: 1s
+        .movie-wrapper
+            width: 100%
+            height: 100%
+            overflow: hidden
+            video
+                width: 100%
+                height: 100%
+                pointer-events: none
+                transform: scale(1.4)
+    .bg-video.show
+        opacity: 1
+        visibility: visible
 
 #monsters
     height: 50vw
@@ -226,6 +247,27 @@
     background: url(/assets/images/hunting_bg.jpg) no-repeat
     background-size: cover
     background-position: center
+    .bg-video
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        opacity: 0
+        visibility: hidden
+        transition: 1s
+        .movie-wrapper
+            width: 100%
+            height: 100%
+            overflow: hidden
+            video
+                width: 100%
+                height: 100%
+                pointer-events: none
+                transform: scale(1.4)
+    .bg-video.show
+        opacity: 1
+        visibility: visible
 
 #new-headquarters
     height: 40vw
