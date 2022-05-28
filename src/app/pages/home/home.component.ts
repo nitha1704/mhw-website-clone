@@ -20,18 +20,6 @@ export class HomeComponent implements OnInit {
       homeBgVideo.classList.add('show');
       homeIntroVideo.play();
     }, 3000);
-
-    // const allBgVideo: any = document.querySelectorAll('.bg-video');
-    // const allIntroVideo: any = document.querySelectorAll('.bg-video video');
-    // setTimeout(() => {
-    //   allBgVideo.forEach((bgVideo: any) => {
-    //     bgVideo.classList.add('show');
-    //   });
-
-    //   allIntroVideo.forEach((introVideo: any) => {
-    //     introVideo.play();
-    //   });
-    // }, 3000);
   }
 
   isInViewPort(elem: any, type: any = 'normal') {
@@ -102,6 +90,24 @@ export class HomeComponent implements OnInit {
       '.section-element .mhw-button2'
     );
 
+    //Wrapper Slider
+    let wrapperSlider = document.querySelectorAll('.wrapper-slider');
+
+    //Wrapper Mhw Button
+    let wrapperMhwButton = document.querySelectorAll('.wrapper-mhw-button');
+
+    // Introduction
+    let introductionSection: any = document.querySelector('#introduction');
+    let introductionBgCharacter: any = document.querySelector(
+      '#introduction .bg-character'
+    );
+    let introductionParagraph: any = document.querySelector(
+      '#introduction .paragraph'
+    );
+
+    // Mhw title
+    let mhwTitle: any = document.querySelectorAll('.mhw-title');
+
     // Ecosystem
     let ecosystemSection: any = document.querySelector('#ecosystem');
     let ecosystemBgVideo: any = document.querySelector('#ecosystem .bg-video');
@@ -117,6 +123,38 @@ export class HomeComponent implements OnInit {
     );
 
     window.addEventListener('scroll', () => {
+      // Wrapper Slider
+      wrapperSlider.forEach((elem: any) => {
+        if (this.isInViewPort(elem) && !elem.classList.contains('in-view')) {
+          elem.classList.add('animate__animated', 'animate__fadeInUp');
+        }
+      });
+
+      // Wrapper Mhw Button
+      wrapperMhwButton.forEach((elem: any) => {
+        if (this.isInViewPort(elem) && !elem.classList.contains('in-view')) {
+          elem.classList.add('animate__animated', 'animate__fadeInUp');
+        }
+      });
+
+      // New elements
+      mhwTitle.forEach((elem: any) => {
+        if (this.isInViewPort(elem) && !elem.classList.contains('in-view')) {
+          elem.classList.add('animate__animated', 'animate__fadeInUp');
+        }
+      });
+
+      // Introduction Section
+      if (
+        this.isInViewPort(introductionSection) &&
+        !introductionSection.classList.contains('in-view')
+      ) {
+        introductionSection.classList.add('in-view');
+        introductionSection.style.position = 'relative';
+        introductionBgCharacter.style.display = 'block';
+        introductionParagraph.style.display = 'block';
+      }
+
       // Play Ecosystem video background
       if (
         this.isInViewPort(ecosystemSection, 'section') &&

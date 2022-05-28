@@ -2,7 +2,7 @@
   <div class="mhw-title flex-center">
     <h1>Media</h1>
   </div>
-  <div class="wrapper">
+  <div class="wrapper wrapper-slider">
     <swiper [config]="mhwMediaConfig">
       <ng-template swiperSlide *ngFor="let item of mediaList">
         <h1>{{ item.text }}</h1>
@@ -17,7 +17,7 @@
     </div>
     <div class="wrapper-pagination-mhw-media"></div>
   </div>
-  <div class="mhw-button flex-center">
+  <div class="mhw-button flex-center wrapper-mhw-button">
     <a href="javascript:void(0)" class="mhw-card">
       <span>List</span>
     </a>

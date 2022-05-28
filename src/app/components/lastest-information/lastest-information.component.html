@@ -2,7 +2,7 @@
   <div class="mhw-title flex-center">
     <h1>Latest Information</h1>
   </div>
-  <div class="wrapper">
+  <div class="wrapper wrapper-slider">
     <swiper [config]="configLastestInformations">
       <ng-template swiperSlide *ngFor="let item of lastestInformations">
         <div class="info mhw-card">
@@ -19,7 +19,7 @@
     </div>
     <div class="wrapper-pagination"></div>
   </div>
-  <div class="lastest-information-button flex-center">
+  <div class="lastest-information-button flex-center wrapper-mhw-button">
     <a href="javascript:void(0)" class="mhw-card">
       <span>Latest Information Here</span>
     </a>

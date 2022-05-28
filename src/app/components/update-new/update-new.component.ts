@@ -15,7 +15,7 @@ export class UpdateNewComponent implements OnInit {
   showFirstAnimation() {
     setTimeout(() => {
       const updateNew: any = document.querySelector('.update-new .wrapper');
-      updateNew.style.animation = `showUpdateNewItem 0.5s`;
+      updateNew.style.animation = `showUpdateNewItem 0.8s`;
       updateNew.style.animationFillMode = 'forwards';
     }, 1500);
   }
