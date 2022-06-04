@@ -115,7 +115,7 @@ nav.active
         .line
             &:first-child
                 transform: rotate(210deg)
-                top: 0.4vw
+                top: 7px
             &:last-child
                 transform: rotate(-210deg)
     .navbar-item1
@@ -138,3 +138,20 @@ nav.active
         transform: translateY(-100%)
     100%
         transform: translateX(0%)
+
+@media (max-width: 1920px)
+    .navbar-menu
+        .container-logo
+            width: 600px !important
+        a
+            font-size: 40px !important
+
+@media (max-width: 1500px)
+    .navbar-item1
+        background-size: cover !important
+        width: 230px !important
+        height: 70px !important
+
+    .navbar-item2
+        width: 100px !important
+        height: 110px !important
