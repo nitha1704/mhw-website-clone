@@ -18,9 +18,5 @@ export class UpdateNewComponent implements OnInit {
       updateNew.style.animation = `showUpdateNewItem 0.8s`;
       updateNew.style.animationFillMode = 'forwards';
     }, 1500);
-
-    if (window.matchMedia('(max-width: 1200px)')) {
-      updateNew.style.opacity = 1;
-    }
   }
 }

@@ -66,7 +66,7 @@ export class MhwMediaComponent implements OnInit {
     },
   ];
   mhwMediaConfig: SwiperOptions = {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 20,
     speed: 500,
     navigation: {
@@ -75,6 +75,11 @@ export class MhwMediaComponent implements OnInit {
     },
     pagination: { el: '.wrapper-pagination-mhw-media', clickable: true },
     loop: true,
+    breakpoints: {
+      992: {
+        slidesPerView: 2,
+      },
+    },
   };
 
   constructor() {}

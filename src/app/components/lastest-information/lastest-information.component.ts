@@ -46,12 +46,18 @@ export class LastestInformationComponent implements OnInit {
     },
   ];
   configLastestInformations: SwiperOptions = {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 20,
     speed: 500,
     navigation: { prevEl: '.prev-icon', nextEl: '.next-icon' },
     pagination: { el: '.wrapper-pagination', clickable: true },
     loop: true,
+    breakpoints: {
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+    },
   };
 
   constructor() {}

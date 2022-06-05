@@ -5,7 +5,7 @@
     background-size: cover
     .main-logo
         position: absolute
-        top: 30px
+        top: 20px
         left: 10px
         display: flex
         align-items: center
@@ -24,11 +24,13 @@
             height: 8vw
     .content
         position: relative
+        width: 100%
+        height: 100%
+        text-align: center
     .inner
         position: relative
         width: 100%
         height: 100%
-        text-align: center
     .sale-medal
         position: absolute
         color: #0edefb
@@ -43,9 +45,12 @@
         left: 16vw
         p
             font-size: 1vw
-    .iceborne-logo
-        height: 24vw
-        width: 40vw
+    .wrap-logo
+        width: 800px
+        height: 450px
+        margin: 0 auto
+        .iceborne-logo
+
     .paragraph
         .main-text
             color: white
@@ -77,6 +82,11 @@
     .bg-video.show
         opacity: 1
         visibility: visible
+    .update-new-desktop
+        width: 100%
+        text-align: center
+        position: absolute
+        bottom: 5%
 
 .update-new-mobile
     display: none
@@ -296,8 +306,14 @@
     background: url(/assets/images/system_bg.jpg) no-repeat
     background-size: cover
     background-position: center
+    margin-bottom: 20px
 
-@media (max-width: 1500px)
+@media (max-width:1400px)
+    #home
+        video
+            transform: scale(1.7) !important
+
+@media (max-width: 992px)
     .bg-video
         display: none
     #home
@@ -374,23 +390,83 @@
                         width: 90%
                     .wrapper-arrow
                         display: none
-
-@media (max-width:992px)
-    .iceborne-logo
-        height: 45vw
-        width: 75vw
-    .main-text.p1
-        font-size: 4vw !important
-        line-height: 0 !important
-        padding: 20px 0 !important
-    .main-text.p2
-        font-size: 6vw !important
-
-    #update-information
-        .update-information-section1
+        .update-information-section2
             .wrapper
-                .update-info1
+                display: block
+                .item1
+                    margin-bottom: 20px
+                .item1, .item2
                     span
-                        font-size: 5vw
-                .update-info2
-                    font-size: 5vw
+                        width: 95%
+                        font-size: 3vw
+                    .wrapper-arrow
+                        .icon
+                            width: 40px
+                            height: 30px
+
+    #introduction
+        padding: 50px 0
+        height: 100vw
+        margin-bottom: 4vw
+        .bg-character
+            width: 80vw
+        .paragraph
+            top: unset
+            bottom: 0%
+            left: 0
+            width: 100%
+            background-color: rgba(255, 255, 255, 0.8)
+            h1
+                font-size: 5.6vw
+            p
+                font-size: 3vw
+
+    .section-element
+        height: 100vw !important
+        padding-bottom: 20px
+        .wrap-content.typewriter
+            margin: 5.66667vw 4vw
+            white-space: normal
+            flex-grow: 0
+        .title
+            width: 100%
+            height: 15.33vw
+            white-space: nowrap
+            h1
+                font-size: 10vw
+
+        .space
+            flex-grow: 1
+        .subtitle
+            font-size: 7vw
+            line-height: 1.2
+        .paragraph
+            font-size: 3vw
+            height: 120px
+        .mhw-card
+            font-size: 3vw
+
+// @media (max-width:992px)
+//     .iceborne-logo
+//         height: 45vw
+//         width: 75vw
+//     .main-text.p1
+//         font-size: 4vw !important
+//         line-height: 0 !important
+//         padding: 20px 0 !important
+//     .main-text.p2
+//         font-size: 6vw !important
+
+//     #update-information
+//         .update-information-section1
+//             .wrapper
+//                 .update-info1
+//                     span
+//                         font-size: 5vw
+//                 .update-info2
+//                     font-size: 5vw
+//         .update-information-section2
+//             .wrapper
+//                 .item1, .item2
+//                     span
+//                         font-size: 4vw
