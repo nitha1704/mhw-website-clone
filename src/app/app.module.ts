@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { UpdateNewComponent } from './components/update-new/update-new.component';
 import { LastestInformationComponent } from './components/lastest-information/lastest-information.component';
 import { MhwMediaComponent } from './components/mhw-media/mhw-media.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MhwMediaComponent } from './components/mhw-media/mhw-media.component';
     UpdateNewComponent,
     LastestInformationComponent,
     MhwMediaComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SwiperModule],
   providers: [],
