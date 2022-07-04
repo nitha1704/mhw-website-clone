@@ -445,6 +445,180 @@
         .mhw-card
             font-size: 3vw
 
+#product-information
+    margin-top: 5vw
+    text-align: center
+    .inner
+        width: 80%
+    .mhw-title
+        h1
+            padding-top: .5vw
+
+    .paragraph
+        h2
+            font-size: 1.25vw
+            margin-bottom: .5vw
+        p
+            font-size: 1.04167vw
+            color: #C73400
+    .preference-title
+        position: relative
+        background: linear-gradient(to right, #5fc9b1 20%, #19a4dd 80%)
+        padding: 1.5vw
+        width: 60%
+        margin: 3vw auto
+        h1
+            color: white
+            font-size: 1.5vw
+            text-shadow: 1px 1px 1px rebeccapurple
+            letter-spacing: .5px
+
+        &::before
+            position: absolute
+            content: ''
+            left: 0
+            background: url("/assets/images/item_select_arrow1.png") center no-repeat
+            background-size: auto
+            background-size: 100% auto
+            width: 4vw
+            height: 11vw
+        &::after
+            position: absolute
+            content: ''
+            right: 0
+            background: url("/assets/images/item_select_arrow2.png") center no-repeat
+            background-size: auto
+            background-size: 100% auto
+            width: 4vw
+            height: 7vw
+    .preferences
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 1.5vw
+        margin-top: 5vw
+        letter-spacing: 1px
+        color: white
+        .preference-item1, .preference-item2
+            cursor: pointer
+            background-color: #155878
+            transition: background-color .5s ease
+            border: 5px solid #5fc9b1
+            .title
+                position: relative
+                background-color: #106690
+                padding: 2.5vw 0
+                transition: background-color .5s ease
+                h3
+                    font-size: 2.5vw
+                    color: #F4DC11
+                h4
+                    font-size: 1.2vw
+                &::after
+                    bottom: .25vw
+                    content: ""
+                    display: block
+                    left: 50%
+                    position: absolute
+                    transform: translateX(-50%)
+                    width: 1vw
+                    height: 2vw
+                    background: url("/assets/images/arrow_icon_b.png") center no-repeat
+                    background-size: 100% auto
+            .content
+                padding: 0vw 3vw 1vw 3vw
+                .version-title
+                    padding: 2vw 0
+                    h3
+                        font-size: 1.5vw
+        .version-wrapper
+            background-color: white
+            padding-top: 1px
+            .version
+                display: grid
+                grid-template-columns: 1fr 1fr
+                gap: 0vw
+                font-size: 1.5vw
+                .digital, .physical
+                    background: #d8f4fc
+                    color: #0b263d
+                    padding: 1vw
+                    margin: .5vw
+            .version-logo
+                margin-top: 3vw
+                img
+                    width: 70%
+            .version-footer
+                padding: 2vw 0
+                font-size: 1.5vw
+                font-weight: bold
+                color: #be1f1f
+
+        .preference-item1
+            &:hover
+                background-color: #367465
+                .title
+                    background-color: #5fc9b1
+        .preference-item2
+            border: 5px solid #0e9ee3
+            &:hover
+                background-color: #106690
+                .title
+                    background-color: #0e9ee3
+            .title
+                padding: 1.7vw
+                &::after
+                    height: 1.6vw
+            .content
+                .version-wrapper
+                    .version
+                        display: block
+                .version-footer
+                    padding: 1.2vw 0.5vw
+    .product-information-footer
+        .image1, .image2
+            cursor: pointer
+            transition: .5s ease
+            &:hover
+                opacity: 0.7
+        .image1
+            margin: 2vw 0
+
+@media (max-width:992px)
+    #introduction
+        .mhw-title
+            h1
+                font-size: 5vw !important
+    #product-information
+        text-align: center
+        .mhw-title
+            h1
+                padding-top: 1.6vw !important
+    .paragraph
+        h2
+            font-size: 2.25vw !important
+        p
+            font-size: 2.04167vw !important
+    .preferences
+        grid-template-columns: 1fr !important
+        .preference-item1, .preference-item2
+            .title
+                h3
+                    font-size: 3.5vw !important
+                h4
+                    font-size: 3.2vw !important
+            .version-title
+                h3
+                    font-size: 2.5vw !important
+            .digital, .physical
+                font-size: 2.5vw !important
+    .preference-title
+        &:before, &::after
+            content: none !important
+        h1
+            font-size: 3vw !important
+    .version-footer
+        span
+            font-size: 2.5vw !important
 @media (max-width:768px)
     #rewards
         .wrapper
