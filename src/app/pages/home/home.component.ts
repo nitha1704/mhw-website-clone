@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
     setTimeout(() => {
       homeBgVideo.classList.add('show');
       homeIntroVideo.play();
-    }, 3000);
+    }, 1000);
   }
 
   isInViewPort(elem: any, type: any = 'normal') {

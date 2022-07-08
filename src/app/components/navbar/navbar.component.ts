@@ -46,6 +46,6 @@ export class NavbarComponent implements OnInit {
       const navItem: any = document.querySelector('nav .wrapper');
       navItem.style.animation = `showNavItem 0.5s`;
       navItem.style.animationFillMode = 'forwards';
-    }, 1500);
+    }, 300);
   }
 }
