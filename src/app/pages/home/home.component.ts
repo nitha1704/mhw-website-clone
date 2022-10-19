@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
     const homeIntroVideo: any = document.querySelector('#home .bg-video video');
     setTimeout(() => {
       homeBgVideo.classList.add('show');
+      homeIntroVideo.muted = true;
       homeIntroVideo.play();
     }, 1000);
   }
